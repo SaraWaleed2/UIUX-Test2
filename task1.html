@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Task1</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="videoPlay">
+            <video src="./Videos/frozen.mp4" width="800" height="500" poster="./Images/frozen.jpg" id="video"></video>
+            <div class="controlles">
+
+                <label id="durationVideo">00:00</label>
+                <input type="range" id="videoRange" value="0">
+
+
+                <div class="volumeLeft">
+                    <Label>Volume</Label>
+                    <input type="range" id="videoVolume" step="0.2" list="volumeRange" min="0" max="1" value="0.2">
+                    <datalist id="volumeRange">
+                        <option value="0"></option>
+                        <option value="0.2"></option>
+                        <option value="0.4"></option>
+                        <option value="0.5"></option>
+                        <option value="0.6"></option>
+                        <option value="0.8"></option>
+                        <option value="1"></option>
+                    </datalist>
+                </div>
+
+                <div class="btns">
+                    <button class="btn" id="btn3">&lt; &lt;</button>
+                    <button class="btn" id="btn4"> &lt; </button>
+                    <button class="btn" id="btn1">Play</button>
+                    <button class="btn" id="btn5">&gt;</button>
+                    <button class="btn" id="btn6">&gt; &gt;</button>
+                    <!-- <button class="btn" id="btn2">Stop</button> -->
+                    <button class="btn" id="btn7">Mute</button>
+                </div>
+
+
+                <div class="speedRight">
+                    <label>Speed</label>
+                    <input type="range" id="speed" min="0.5" max="3.5" step="0.5" list="speedRange" value="1">
+                    <datalist id="speedRange">
+                        <option value="0.5"></option>
+                        <option value="1"></option>
+                        <option value="1.5"></option>
+                        <option value="2"></option>
+                        <option value="2.5"></option>
+                        <option value="3"></option>
+                        <option value="3.5"></option>
+                    </datalist>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./JS/task1.js"></script>
+</body>
+
+</html>
